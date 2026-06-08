@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerenciador de Tarefas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <div class="pagina">
+    <header>
+      <span class="icone">☑</span>
+      <h1>Gerenciador de Tarefas</h1>
+    </header>
+
+    <main>
+      <section class="card">
+        <h2>Nova Tarefa</h2>
+
+        <div class="linha">
+          <input id="campoTarefa" type="text" placeholder="Digite uma tarefa...">
+          <button id="btnAdicionar">Adicionar</button>
+        </div>
+      </section>
+
+      <section class="topo">
+        <h2>Suas Tarefas</h2>
+
+        <div class="resumo">
+          <p>Total: <strong id="total">0</strong> tarefas</p>
+          <p>Pendentes: <strong id="pendentes">0</strong></p>
+          <p>Concluídas: <strong id="concluidas">0</strong></p>
+        </div>
+      </section>
+
+      <ul id="listaTarefas"></ul>
+    </main>
+
+    <footer>Desenvolvido com ❤️</footer>
+  </div>
+
+  <script src="sistema.js"></script>
+</body>
+</html>
