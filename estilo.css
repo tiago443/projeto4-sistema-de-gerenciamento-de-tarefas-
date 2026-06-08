@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #f3f6fb;
+  color: #111827;
+}
+
+.pagina {
+  max-width: 1150px;
+  margin: auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #0002;
+}
+
+header {
+  background: linear-gradient(135deg, #1d72d2, #0052b3);
+  color: white;
+  padding: 30px 40px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.icone {
+  font-size: 34px;
+}
+
+main {
+  padding: 35px;
+}
+
+.card {
+  padding: 28px;
+  margin-bottom: 42px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px #0003;
+}
+
+.linha,
+.topo,
+.resumo,
+.esquerda,
+.direita {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.linha input {
+  flex: 1;
+}
+
+input {
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+button {
+  padding: 13px 26px;
+  border: 0;
+  border-radius: 6px;
+  background: #1d72d2;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #155cb0;
+}
+
+.topo {
+  justify-content: space-between;
+}
+
+#total {
+  color: #1d72d2;
+}
+
+#pendentes {
+  color: #d97706;
+}
+
+#concluidas {
+  color: #16a34a;
+}
+
+ul {
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+li {
+  padding: 22px 26px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:last-child {
+  border-bottom: 0;
+}
+
+input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+}
+
+.nome {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.riscada {
+  text-decoration: line-through;
+  color: #6b7280;
+}
+
+.status {
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.pendente {
+  color: #d97706;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+}
+
+.concluida {
+  color: #16a34a;
+  background: #dcfce7;
+  border: 1px solid #bbf7d0;
+}
+
+.excluir {
+  background: white;
+  color: red;
+  border: 1px solid red;
+  padding: 10px 14px;
+}
+
+.excluir:hover {
+  background: #fee2e2;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #374151;
+}
+
+@media (max-width: 700px) {
+  .linha,
+  .topo,
+  .resumo,
+  li {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button {
+    width: 100%;
+  }
+}
